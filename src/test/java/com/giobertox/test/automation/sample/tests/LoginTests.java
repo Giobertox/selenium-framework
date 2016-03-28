@@ -38,7 +38,7 @@ public class LoginTests {
 	@Test
 	public void testGoodPasswordCanLogin() {
 		LoginPage.loginAs("username").withPassword("password").login();
-		Assert.assertTrue(DashboardPage.isLoaded(), "Dashboard reached when it should have not.");
+		Assert.assertFalse(DashboardPage.isLoaded(), "Dashboard reached when it should have not.");
 	}
 
 }

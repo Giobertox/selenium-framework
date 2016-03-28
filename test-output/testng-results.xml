@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16273" started-at="2016-03-28T17:18:39Z" finished-at="2016-03-28T17:18:55Z">
+  <suite name="Default suite" duration-ms="15219" started-at="2016-03-28T17:25:20Z" finished-at="2016-03-28T17:25:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16273" started-at="2016-03-28T17:18:39Z" finished-at="2016-03-28T17:18:55Z">
+    <test name="Default test" duration-ms="15219" started-at="2016-03-28T17:25:20Z" finished-at="2016-03-28T17:25:36Z">
       <class name="com.giobertox.test.automation.sample.tests.CheckSolutionsTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="setUp" is-config="true" duration-ms="2265" started-at="2016-03-28T18:18:39Z" finished-at="2016-03-28T18:18:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="setUp" is-config="true" duration-ms="2217" started-at="2016-03-28T18:25:20Z" finished-at="2016-03-28T18:25:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openHomePage()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="openHomePage" is-config="true" duration-ms="1895" started-at="2016-03-28T18:18:41Z" finished-at="2016-03-28T18:18:43Z">
+        <test-method status="PASS" signature="openHomePage()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="openHomePage" is-config="true" duration-ms="922" started-at="2016-03-28T18:25:23Z" finished-at="2016-03-28T18:25:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openHomePage -->
-        <test-method status="PASS" signature="allSolutionsAreListed()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="allSolutionsAreListed" duration-ms="169" started-at="2016-03-28T18:18:43Z" finished-at="2016-03-28T18:18:43Z">
+        <test-method status="PASS" signature="allSolutionsAreListed()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="allSolutionsAreListed" duration-ms="143" started-at="2016-03-28T18:25:24Z" finished-at="2016-03-28T18:25:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allSolutionsAreListed -->
-        <test-method status="PASS" signature="openHomePage()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="openHomePage" is-config="true" duration-ms="962" started-at="2016-03-28T18:18:43Z" finished-at="2016-03-28T18:18:44Z">
+        <test-method status="PASS" signature="openHomePage()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="openHomePage" is-config="true" duration-ms="958" started-at="2016-03-28T18:25:24Z" finished-at="2016-03-28T18:25:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openHomePage -->
-        <test-method status="PASS" signature="solutionsSelectionsWork()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="solutionsSelectionsWork" duration-ms="10907" started-at="2016-03-28T18:18:44Z" finished-at="2016-03-28T18:18:55Z">
+        <test-method status="PASS" signature="solutionsSelectionsWork()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="solutionsSelectionsWork" duration-ms="10904" started-at="2016-03-28T18:25:25Z" finished-at="2016-03-28T18:25:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- solutionsSelectionsWork -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="tearDown" is-config="true" duration-ms="61" started-at="2016-03-28T18:18:55Z" finished-at="2016-03-28T18:18:55Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="tearDown" is-config="true" duration-ms="64" started-at="2016-03-28T18:25:36Z" finished-at="2016-03-28T18:25:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
