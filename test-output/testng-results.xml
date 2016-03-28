@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15642" started-at="2016-03-28T18:39:44Z" finished-at="2016-03-28T18:40:00Z">
+  <suite name="Default suite" duration-ms="12049" started-at="2016-03-28T23:34:33Z" finished-at="2016-03-28T23:34:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15642" started-at="2016-03-28T18:39:44Z" finished-at="2016-03-28T18:40:00Z">
-      <class name="com.giobertox.test.automation.sample.tests.LoginTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.giobertox.test.automation.sample.tests.LoginTests@7f9a81e8]" name="setUp" is-config="true" duration-ms="2105" started-at="2016-03-28T19:39:44Z" finished-at="2016-03-28T19:39:46Z">
+    <test name="Default test" duration-ms="12049" started-at="2016-03-28T23:34:33Z" finished-at="2016-03-28T23:34:45Z">
+      <class name="com.giobertox.test.automation.sample.tests.HorizontalNavigationTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.giobertox.test.automation.sample.tests.HorizontalNavigationTests@1794d431]" name="setUp" is-config="true" duration-ms="2346" started-at="2016-03-29T00:34:33Z" finished-at="2016-03-29T00:34:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openHomePage()[pri:0, instance:com.giobertox.test.automation.sample.tests.LoginTests@7f9a81e8]" name="openHomePage" is-config="true" duration-ms="1765" started-at="2016-03-28T19:39:46Z" finished-at="2016-03-28T19:39:48Z">
+        <test-method status="PASS" signature="beforeEveryMethod()[pri:0, instance:com.giobertox.test.automation.sample.tests.HorizontalNavigationTests@1794d431]" name="beforeEveryMethod" is-config="true" duration-ms="1507" started-at="2016-03-29T00:34:36Z" finished-at="2016-03-29T00:34:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openHomePage -->
-        <test-method status="PASS" signature="testGoodPasswordCanLogin()[pri:0, instance:com.giobertox.test.automation.sample.tests.LoginTests@7f9a81e8]" name="testGoodPasswordCanLogin" duration-ms="5732" started-at="2016-03-28T19:39:48Z" finished-at="2016-03-28T19:39:54Z">
+        </test-method> <!-- beforeEveryMethod -->
+        <test-method status="PASS" signature="testAllMenuItemsWork()[pri:0, instance:com.giobertox.test.automation.sample.tests.HorizontalNavigationTests@1794d431]" name="testAllMenuItemsWork" duration-ms="8120" started-at="2016-03-29T00:34:37Z" finished-at="2016-03-29T00:34:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGoodPasswordCanLogin -->
-        <test-method status="PASS" signature="openHomePage()[pri:0, instance:com.giobertox.test.automation.sample.tests.LoginTests@7f9a81e8]" name="openHomePage" is-config="true" duration-ms="406" started-at="2016-03-28T19:39:54Z" finished-at="2016-03-28T19:39:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openHomePage -->
-        <test-method status="PASS" signature="testWrongPasswordCantLogin()[pri:0, instance:com.giobertox.test.automation.sample.tests.LoginTests@7f9a81e8]" name="testWrongPasswordCantLogin" duration-ms="5555" started-at="2016-03-28T19:39:54Z" finished-at="2016-03-28T19:40:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWrongPasswordCantLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.giobertox.test.automation.sample.tests.LoginTests@7f9a81e8]" name="tearDown" is-config="true" duration-ms="63" started-at="2016-03-28T19:40:00Z" finished-at="2016-03-28T19:40:00Z">
+        </test-method> <!-- testAllMenuItemsWork -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.giobertox.test.automation.sample.tests.HorizontalNavigationTests@1794d431]" name="tearDown" is-config="true" duration-ms="65" started-at="2016-03-29T00:34:45Z" finished-at="2016-03-29T00:34:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.giobertox.test.automation.sample.tests.LoginTests -->
+      </class> <!-- com.giobertox.test.automation.sample.tests.HorizontalNavigationTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

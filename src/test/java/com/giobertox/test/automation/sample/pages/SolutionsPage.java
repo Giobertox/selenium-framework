@@ -12,7 +12,6 @@ public class SolutionsPage {
 
 	public static void goTo() {
 		Driver.instance.navigate().to(MEGANEXUS_SOLUTIONS_URL);
-
 	}
 
 	public static void selectSolution(final String solutionValue) {
