@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15219" started-at="2016-03-28T17:25:20Z" finished-at="2016-03-28T17:25:36Z">
+  <suite name="Default suite" duration-ms="15642" started-at="2016-03-28T18:39:44Z" finished-at="2016-03-28T18:40:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15219" started-at="2016-03-28T17:25:20Z" finished-at="2016-03-28T17:25:36Z">
-      <class name="com.giobertox.test.automation.sample.tests.CheckSolutionsTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="setUp" is-config="true" duration-ms="2217" started-at="2016-03-28T18:25:20Z" finished-at="2016-03-28T18:25:23Z">
+    <test name="Default test" duration-ms="15642" started-at="2016-03-28T18:39:44Z" finished-at="2016-03-28T18:40:00Z">
+      <class name="com.giobertox.test.automation.sample.tests.LoginTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.giobertox.test.automation.sample.tests.LoginTests@7f9a81e8]" name="setUp" is-config="true" duration-ms="2105" started-at="2016-03-28T19:39:44Z" finished-at="2016-03-28T19:39:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openHomePage()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="openHomePage" is-config="true" duration-ms="922" started-at="2016-03-28T18:25:23Z" finished-at="2016-03-28T18:25:24Z">
+        <test-method status="PASS" signature="openHomePage()[pri:0, instance:com.giobertox.test.automation.sample.tests.LoginTests@7f9a81e8]" name="openHomePage" is-config="true" duration-ms="1765" started-at="2016-03-28T19:39:46Z" finished-at="2016-03-28T19:39:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openHomePage -->
-        <test-method status="PASS" signature="allSolutionsAreListed()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="allSolutionsAreListed" duration-ms="143" started-at="2016-03-28T18:25:24Z" finished-at="2016-03-28T18:25:24Z">
+        <test-method status="PASS" signature="testGoodPasswordCanLogin()[pri:0, instance:com.giobertox.test.automation.sample.tests.LoginTests@7f9a81e8]" name="testGoodPasswordCanLogin" duration-ms="5732" started-at="2016-03-28T19:39:48Z" finished-at="2016-03-28T19:39:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- allSolutionsAreListed -->
-        <test-method status="PASS" signature="openHomePage()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="openHomePage" is-config="true" duration-ms="958" started-at="2016-03-28T18:25:24Z" finished-at="2016-03-28T18:25:25Z">
+        </test-method> <!-- testGoodPasswordCanLogin -->
+        <test-method status="PASS" signature="openHomePage()[pri:0, instance:com.giobertox.test.automation.sample.tests.LoginTests@7f9a81e8]" name="openHomePage" is-config="true" duration-ms="406" started-at="2016-03-28T19:39:54Z" finished-at="2016-03-28T19:39:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openHomePage -->
-        <test-method status="PASS" signature="solutionsSelectionsWork()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="solutionsSelectionsWork" duration-ms="10904" started-at="2016-03-28T18:25:25Z" finished-at="2016-03-28T18:25:36Z">
+        <test-method status="PASS" signature="testWrongPasswordCantLogin()[pri:0, instance:com.giobertox.test.automation.sample.tests.LoginTests@7f9a81e8]" name="testWrongPasswordCantLogin" duration-ms="5555" started-at="2016-03-28T19:39:54Z" finished-at="2016-03-28T19:40:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- solutionsSelectionsWork -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.giobertox.test.automation.sample.tests.CheckSolutionsTests@7f9a81e8]" name="tearDown" is-config="true" duration-ms="64" started-at="2016-03-28T18:25:36Z" finished-at="2016-03-28T18:25:36Z">
+        </test-method> <!-- testWrongPasswordCantLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.giobertox.test.automation.sample.tests.LoginTests@7f9a81e8]" name="tearDown" is-config="true" duration-ms="63" started-at="2016-03-28T19:40:00Z" finished-at="2016-03-28T19:40:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.giobertox.test.automation.sample.tests.CheckSolutionsTests -->
+      </class> <!-- com.giobertox.test.automation.sample.tests.LoginTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
