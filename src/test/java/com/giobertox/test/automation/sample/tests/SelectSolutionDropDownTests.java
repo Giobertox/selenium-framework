@@ -6,31 +6,13 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.giobertox.test.automation.sample.pages.SolutionsPage;
-import com.giobertox.test.automation.sample.utils.Driver;
 
-public class SelectSolutionDropDownTests {
+public class SelectSolutionDropDownTests extends BasicTests{
 
 
-	@BeforeClass(alwaysRun = true)
-	public void setUp() {
-		Driver.getInstance();
-	}
-
-	@AfterClass(alwaysRun = true)
-	public void tearDown() {
-		Driver.instance.quit();
-	}
-
-	@BeforeMethod(alwaysRun = true)
-	public void openHomePage() {
-		SolutionsPage.goTo();
-	}
 
 	@Test
 	public void allSolutionsAreListed() {

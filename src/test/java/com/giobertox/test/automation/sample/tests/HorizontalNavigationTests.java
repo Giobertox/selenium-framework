@@ -1,33 +1,16 @@
 package com.giobertox.test.automation.sample.tests;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.giobertox.test.automation.sample.pages.HeaderPage;
 import com.giobertox.test.automation.sample.pages.TopMenu;
-import com.giobertox.test.automation.sample.utils.Driver;
 
-public class HorizontalNavigationTests {
+public class HorizontalNavigationTests extends BasicTests{
 
 	private static final String HTTP_WWW_MEGANEXUS_COM = "http://www.meganexus.com/";
 
-	@BeforeClass(alwaysRun = true)
-	public void setUp() {
-		Driver.getInstance();
-	}
 
-	@AfterClass(alwaysRun = true)
-	public void tearDown() {
-		Driver.instance.quit();
-	}
-
-	@BeforeMethod(alwaysRun = true)
-	public void beforeEveryMethod() {
-		Driver.instance.navigate().to(HTTP_WWW_MEGANEXUS_COM);
-	}
 
 	@Test
 	public void testAllMenuItemsWork() {

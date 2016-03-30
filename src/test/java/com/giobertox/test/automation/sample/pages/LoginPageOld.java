@@ -14,14 +14,14 @@ public class LoginPageOld {
 		this.driver = driver;
 	}
 
-	public HomePage loginAs(String username, String password) {
+	public void loginAs(String username, String password) {
 		driver.findElement(EMAIL_INPUT)
 				.sendKeys(username);
 		driver.findElement(PASSWORD_INPUT)
 				.sendKeys(password);
 		driver.findElement(SIGN_IN_BUTTON)
 				.click();
-		return new HomePage(driver);
+//		return new HomePage(driver);
 	}
 
 	public boolean isLoaded() {

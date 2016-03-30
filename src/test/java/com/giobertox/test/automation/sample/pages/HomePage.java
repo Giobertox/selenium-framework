@@ -1,26 +1,19 @@
 package com.giobertox.test.automation.sample.pages;
 
-import org.openqa.selenium.WebDriver;
-
-import com.giobertox.test.automation.sample.components.NavigationMenu;
+import com.giobertox.test.automation.sample.utils.Driver;
 
 public class HomePage {
-	private static final String AMAZON_HOME_PAGE_URL = "http://www.amazon.com";
-	private final NavigationMenu navigationMenu;
-	private WebDriver driver;
+	private static final String MEGANEXUS_HOME_PAGE_URL = "http://www.meganexus.com";
 
-	public HomePage(final WebDriver driver) {
-		this.driver = driver;
-		this.navigationMenu = new NavigationMenu(driver);
-	}
 
-	public HomePage open() {
-		driver.get(AMAZON_HOME_PAGE_URL);
-		return this;
-	}
+//	public HomePage open() {
+//		driver.get(MEGANEXUS_HOME_PAGE_URL);
+//		return this;
+//	}
 
-	public NavigationMenu navigationMenu() {
-		return navigationMenu;
+
+	public static void open() {
+		Driver.instance.navigate().to(MEGANEXUS_HOME_PAGE_URL);
 	}
 
 }
