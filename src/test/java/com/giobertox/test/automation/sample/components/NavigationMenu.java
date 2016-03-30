@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import com.giobertox.test.automation.sample.pages.CartPage;
 import com.giobertox.test.automation.sample.pages.SearchResultsPage;
 
-public class NavigationMenu { 
+public class NavigationMenu {
 	private static final By SEARCH_DROPDOWN_BOX = By.id("searchDropdownBox");
 	private static final By SEARCH_INPUT = By.id("twotabsearchtextbox");
 	private static final By SEARCH_GO_BUTTON = By.xpath("//*[@value='Go']");
@@ -28,6 +28,9 @@ public class NavigationMenu {
 
 	public CartPage navigateToCartPage() {
 		driver.findElement(NAVIGATION_ITEM_CART).click();
+		System.out.println("ciao");
 		return new CartPage(driver);
+
+		//
 	}
 }
