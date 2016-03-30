@@ -8,7 +8,8 @@ import com.giobertox.test.automation.sample.utils.Driver;
 public class TopMenu {
 
 	public static void goToSolutions() {
-		WebElement solutionMenuItem = Driver.instance.findElement(By.id("menu-item-105"));
+		WebElement solutionMenuItem =
+				Driver.instance.findElement(By.id("menu-item-105"));
 		solutionMenuItem.click();
 	}
 
@@ -23,7 +24,8 @@ public class TopMenu {
 	}
 
 	public static void goToServices() {
-		WebElement servicesMenuItem = Driver.instance.findElement(By.id("menu-item-622"));
+		WebElement servicesMenuItem =
+				Driver.instance.findElement(By.id("menu-item-622"));
 		servicesMenuItem.click();
 	}
 
@@ -33,7 +35,8 @@ public class TopMenu {
 	}
 
 	public static void goToAboutUs() {
-		WebElement aboutUsMenuItem = Driver.instance.findElement(By.id("menu-item-166"));
+		WebElement aboutUsMenuItem =
+				Driver.instance.findElement(By.id("menu-item-166"));
 		aboutUsMenuItem.click();
 	}
 
