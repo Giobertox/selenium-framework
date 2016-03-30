@@ -8,7 +8,7 @@ import com.giobertox.test.automation.sample.utils.Driver;
 public class HeaderPage {
 
 	public static WebElement getTitle() {
-		WebElement headerTitle = Driver.instance.findElement(By.xpath("//*[@id=\"main\"]/header/div/div/div/h1"));
+		WebElement headerTitle = Driver.getInstance().findElement(By.xpath("//*[@id=\"main\"]/header/div/div/div/h1"));
 		return headerTitle;
 	}
 

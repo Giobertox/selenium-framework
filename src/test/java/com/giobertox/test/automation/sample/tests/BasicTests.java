@@ -16,7 +16,7 @@ public class BasicTests {
 
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
-		Driver.instance.quit();
+		Driver.getInstance().quit();
 	}
 
 	@BeforeMethod(alwaysRun = true)

@@ -3,14 +3,10 @@ package com.giobertox.test.automation.sample.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.giobertox.test.automation.sample.components.TopMenu;
 import com.giobertox.test.automation.sample.pages.HeaderPage;
-import com.giobertox.test.automation.sample.pages.TopMenu;
 
-public class HorizontalNavigationTests extends BasicTests{
-
-	private static final String HTTP_WWW_MEGANEXUS_COM = "http://www.meganexus.com/";
-
-
+public class HorizontalNavigationTests extends BasicTests {
 
 	@Test
 	public void testAllMenuItemsWork() {

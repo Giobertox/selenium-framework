@@ -1,23 +1,24 @@
 package com.giobertox.test.automation.sample.utils;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Driver {
+public final class Driver {
+	private static final WebDriver INSTANCE = new FirefoxDriver();
+	private static final String BASE_ADDRESS = "http://www.meganexus.com/";
 
-	public static WebDriver instance = null; // new FirefoxDriver();
+	public static String getBaseAddress() {
+		return BASE_ADDRESS;
+	}
 
 	private Driver() {
 	}
 
 	public static WebDriver getInstance() {
-		if (instance == null) {
-			instance = new FirefoxDriver();
-			instance.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		}
-		return instance;
+		return INSTANCE;
 	}
 
+	public static void wait(final int milliseconds) throws InterruptedException {
+		Thread.sleep(milliseconds);
+	}
 }

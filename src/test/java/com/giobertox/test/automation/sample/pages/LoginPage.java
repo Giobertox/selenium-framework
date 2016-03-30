@@ -7,12 +7,12 @@ import com.giobertox.test.automation.sample.utils.Driver;
 import com.giobertox.test.automation.sample.utils.LoginCommand;
 
 public class LoginPage {
-
 	private static final String LOGIN_ERROR_ID = "login_error";
-	private static final String MEGANEXUS_LOGIN_URL = "http://www.meganexus.com/wp-login.php";
+
+	private static final String MEGANEXUS_LOGIN_URL = Driver.getBaseAddress() + "wp-login.php";
 
 	public static void goTo() {
-		Driver.instance.navigate().to(MEGANEXUS_LOGIN_URL);
+		Driver.getInstance().navigate().to(MEGANEXUS_LOGIN_URL);
 	}
 
 	public static LoginCommand loginAs(final String username) {
@@ -20,7 +20,7 @@ public class LoginPage {
 	}
 
 	public static boolean hasErrorMessage() {
-		WebElement loginErrorMessage = Driver.instance.findElement(By.id(LOGIN_ERROR_ID));
+		WebElement loginErrorMessage = Driver.getInstance().findElement(By.id(LOGIN_ERROR_ID));
 		if (loginErrorMessage != null) {
 			return true;
 		}
@@ -28,7 +28,7 @@ public class LoginPage {
 	}
 
 	public static String getErrorMessage() {
-		WebElement loginErrorMessage = Driver.instance.findElement(By.id(LOGIN_ERROR_ID));
+		WebElement loginErrorMessage = Driver.getInstance().findElement(By.id(LOGIN_ERROR_ID));
 		if (loginErrorMessage != null) {
 			return loginErrorMessage.getText();
 		}

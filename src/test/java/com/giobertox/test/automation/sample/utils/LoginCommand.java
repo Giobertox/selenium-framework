@@ -17,13 +17,13 @@ public class LoginCommand {
 	}
 
 	public void login() {
-		WebElement loginInput = Driver.instance.findElement(By.id("user_login"));
+		WebElement loginInput = Driver.getInstance().findElement(By.id("user_login"));
 		loginInput.sendKeys("userName");
 
-		WebElement passwordInput = Driver.instance.findElement(By.id("user_pass"));
+		WebElement passwordInput = Driver.getInstance().findElement(By.id("user_pass"));
 		passwordInput.sendKeys("password");
 
-		WebElement submitButton = Driver.instance.findElement(By.id("wp-submit"));
+		WebElement submitButton = Driver.getInstance().findElement(By.id("wp-submit"));
 		submitButton.click();
 	}
 

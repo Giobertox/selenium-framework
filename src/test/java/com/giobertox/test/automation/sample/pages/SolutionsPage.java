@@ -10,8 +10,7 @@ import com.giobertox.test.automation.sample.utils.Driver;
 
 public class SolutionsPage {
 
-	private static final String MEGANEXUS_SOLUTIONS_URL =
-			"http://www.meganexus.com/solutions-sectors/";
+	private static final String MEGANEXUS_SOLUTIONS_URL = "http://www.meganexus.com/solutions-sectors/";
 
 	public static final String COMMUNITY = "Community";
 	public static final String JUSTICE = "Justice";
@@ -21,29 +20,26 @@ public class SolutionsPage {
 	public static final String HEALTHCARE = "Healthcare";
 
 	public static void goTo() {
-		Driver.instance.navigate().to(MEGANEXUS_SOLUTIONS_URL);
+		Driver.getInstance().navigate().to(MEGANEXUS_SOLUTIONS_URL);
 	}
 
-	//test
+	// test
 	public static void selectSolution(final String solutionValue) {
-		Select select = new
-				Select(Driver.instance.findElement(By.id("sector-change-select")));
+		Select select = new Select(Driver.getInstance().findElement(By.id("sector-change-select")));
 		select.selectByVisibleText(solutionValue);
 	}
 
-
 	public static String getSelectedSolution() {
-		WebElement title = Driver.instance
+		WebElement title = Driver.getInstance()
 				.findElement(By.cssSelector("#carousel-solution > div >	div.item.active > div > div.col-xs-4 > h2"));
-						if ( title != null ){
-							return title.getText();
-						}
-						return "";
+		if (title != null) {
+			return title.getText();
+		}
+		return "";
 	}
 
 	public static List<WebElement> getSDropdownSolutionsMenuItems() {
-		Select select = new
-				Select(Driver.instance.findElement(By.id("sector-change-select")));
+		Select select = new Select(Driver.getInstance().findElement(By.id("sector-change-select")));
 		List<WebElement> dropdownOptions = select.getOptions();
 		return dropdownOptions;
 	}

@@ -9,15 +9,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.giobertox.test.automation.sample.pages.SolutionsPage;
+import com.giobertox.test.automation.sample.utils.Driver;
 
-public class SelectSolutionDropDownTests extends BasicTests{
-
-
+public class SelectSolutionDropDownTests extends BasicTests {
 
 	@Test
 	public void allSolutionsAreListed() {
-		List<WebElement> dropdownOptions =
-				SolutionsPage.getSDropdownSolutionsMenuItems();
+		List<WebElement> dropdownOptions = SolutionsPage.getSDropdownSolutionsMenuItems();
 		Assert.assertEquals(dropdownOptions.get(0).getText(), SolutionsPage.ALL);
 		Assert.assertEquals(dropdownOptions.get(1).getText(), SolutionsPage.HEALTHCARE);
 		Assert.assertEquals(dropdownOptions.get(2).getText(), SolutionsPage.EDUCATION);
@@ -28,13 +26,11 @@ public class SelectSolutionDropDownTests extends BasicTests{
 
 	@Test
 	public void solutionsSelectionsWork() throws InterruptedException {
-		ArrayList<String> solutionList = new ArrayList<String>(
-				Arrays.asList(SolutionsPage.HEALTHCARE, SolutionsPage.EDUCATION,
-						SolutionsPage.EMPLOYMENT, SolutionsPage.JUSTICE,
-						SolutionsPage.COMMUNITY));
+		ArrayList<String> solutionList = new ArrayList<String>(Arrays.asList(SolutionsPage.HEALTHCARE,
+				SolutionsPage.EDUCATION, SolutionsPage.EMPLOYMENT, SolutionsPage.JUSTICE, SolutionsPage.COMMUNITY));
 		for (String solution : solutionList) {
 			SolutionsPage.selectSolution(solution);
-			Thread.sleep(1000);
+			Driver.wait(1000);
 			Assert.assertEquals(SolutionsPage.getSelectedSolution(), solution,
 					"Element displayed is not the expected one");
 		}
