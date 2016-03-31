@@ -10,7 +10,7 @@ import com.giobertox.test.automation.sample.utils.Driver;
 
 public class SolutionsPage {
 
-	private static final String MEGANEXUS_SOLUTIONS_URL = "http://www.meganexus.com/solutions-sectors/";
+	private static final String MEGANEXUS_SOLUTIONS_URL = Driver.getBaseAddress() + "/solutions-sectors/";
 
 	public static final String COMMUNITY = "Community";
 	public static final String JUSTICE = "Justice";

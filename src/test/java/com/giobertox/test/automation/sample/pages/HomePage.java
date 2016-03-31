@@ -3,7 +3,7 @@ package com.giobertox.test.automation.sample.pages;
 import com.giobertox.test.automation.sample.utils.Driver;
 
 public class HomePage {
-	private static final String MEGANEXUS_HOME_PAGE_URL = "http://www.meganexus.com";
+	private static final String MEGANEXUS_HOME_PAGE_URL = Driver.getBaseAddress();
 
 	// public HomePage open() {
 	// driver.get(MEGANEXUS_HOME_PAGE_URL);
