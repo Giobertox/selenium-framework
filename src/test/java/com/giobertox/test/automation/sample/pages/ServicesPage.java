@@ -7,7 +7,7 @@ public class ServicesPage {
 	private static final String MEGANEXUS_SERVICES_URL = "http://www.meganexus.com/services/";
 
 	public static void open() {
-		Driver.instance.navigate().to(MEGANEXUS_SERVICES_URL);
+		Driver.getInstance().navigate().to(MEGANEXUS_SERVICES_URL);
 	}
 
 }
