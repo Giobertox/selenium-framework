@@ -1,5 +1,7 @@
 package com.giobertox.test.automation.sample.utils;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -19,6 +21,7 @@ public final class Driver {
 	static {
 		try {
 			instance = new FirefoxDriver();
+			instance.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		} catch (Exception e) {
 			throw new RuntimeException("Darn, an error occurred!", e);
 		}

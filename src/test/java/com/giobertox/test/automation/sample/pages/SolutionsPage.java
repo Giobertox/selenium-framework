@@ -23,7 +23,6 @@ public class SolutionsPage {
 		Driver.getInstance().navigate().to(MEGANEXUS_SOLUTIONS_URL);
 	}
 
-	// test
 	public static void selectSolution(final String solutionValue) {
 		Select select = new Select(Driver.getInstance().findElement(By.id("sector-change-select")));
 		select.selectByVisibleText(solutionValue);

@@ -34,6 +34,8 @@ public class HorizontalNavigationTests extends BasicTests {
 		Assert.assertEquals(HeaderPage.getTitle().getText(), "Contact",
 				"The header title does not match the selected menu item");
 
+		// select
+
 	}
 
 }

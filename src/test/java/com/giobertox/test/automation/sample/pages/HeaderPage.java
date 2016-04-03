@@ -9,6 +9,7 @@ public class HeaderPage {
 
 	public static WebElement getTitle() {
 		WebElement headerTitle = Driver.getInstance().findElement(By.xpath("//*[@id=\"main\"]/header/div/div/div/h1"));
+
 		return headerTitle;
 	}
 
