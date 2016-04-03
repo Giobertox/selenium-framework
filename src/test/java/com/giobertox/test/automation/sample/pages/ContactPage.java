@@ -36,12 +36,21 @@ public class ContactPage {
 		Driver.getInstance().findElement(By.name("contact-message")).sendKeys("Message");
 	}
 
-	public static void sendMessageForm() {
+	public static void sendForm() {
 		Driver.getInstance().findElement(By.className("wpcf7-form-control")).submit();
 	}
 
 	public static String getErrorMessage() {
 		return Driver.getInstance().findElement(By.className("wpcf7-not-valid-tip")).getText();
+	}
+
+	public static void fillContactForm() {
+		fillNameField();
+		fillOrganisationField();
+		fillEmail();
+		fillTelephoneNumber();
+		fillAreaOfInterest();
+		fillMessage();
 	}
 
 }
