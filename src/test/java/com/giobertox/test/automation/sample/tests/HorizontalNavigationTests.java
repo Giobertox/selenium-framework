@@ -16,11 +16,11 @@ public class HorizontalNavigationTests extends BasicTests {
 		TopMenu.goToClients();
 		Assert.assertEquals(HeaderPage.getTitle().getText(), "Clients",
 				"The header title does not match the selected menu item");
-		// TopMenu.goToNeo();
-		// Assert.assertEquals(HeaderPage.getTitle().getText(),
-		// "NEO/nNEO is a secure data sharing platform consisting of a portal,
-		// MIS and reporting system",
-		// "The header title does not match the selected menu item");
+		TopMenu.goToNeo();
+		Assert.assertTrue(
+				HeaderPage.getTitle().getText().contains(
+						"NEO is a secure data sharing platform consisting of a portal, MIS and reporting system"),
+				"The header title does not match the selected menu item");
 		TopMenu.goToServices();
 		Assert.assertEquals(HeaderPage.getTitle().getText(), "Services",
 				"The header title does not match the selected menu item");
