@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 
 import com.giobertox.test.automation.sample.utils.Driver;
 
-public class ContactPage {
+public class ContactPage extends BasicPage{
 
-	private static final String MEGANEXUS_CONTACT_URL = Driver.getBaseAddress() + "contact/";
+	private static final String MEGANEXUS_CONTACT_URL = getBaseAddress() + "contact/";
 
 	public static void goTo() {
 		Driver.getInstance().navigate().to(MEGANEXUS_CONTACT_URL);

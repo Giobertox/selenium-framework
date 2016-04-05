@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import com.giobertox.test.automation.sample.pages.ContactPage;
 
-public class SendContactForm extends BasicTests {
+public class ContactFormTests extends BasicTests {
 
 	@Test
 	public void testFormFilledCorrectlyButNoCaptcha() {

@@ -4,7 +4,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-import com.giobertox.test.automation.sample.pages.SolutionsPage;
 import com.giobertox.test.automation.sample.utils.Driver;
 
 public class BasicTests {
@@ -21,7 +20,7 @@ public class BasicTests {
 
 	@BeforeMethod(alwaysRun = true)
 	public void beforeMethod() {
-		SolutionsPage.goTo();
+//	 to be used in the specific test class maybe to refresh the page for example
 	}
 
 }

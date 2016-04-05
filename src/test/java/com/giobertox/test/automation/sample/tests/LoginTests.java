@@ -12,6 +12,7 @@ public class LoginTests extends BasicTests{
 
 	@Test
 	public void testWrongPasswordCantLogin() {
+		LoginPage.goTo();
 		LoginPage.loginAs("username").withPassword("password").login();
 		Assert.assertTrue(!DashboardPage.isLoaded(), "Dashboard reached when it should have not.");
 		Assert.assertTrue(LoginPage.hasErrorMessage(), "Login error message was expected but not found.");
@@ -20,6 +21,7 @@ public class LoginTests extends BasicTests{
 
 	@Test
 	public void testGoodPasswordCanLogin() {
+		LoginPage.goTo();
 		LoginPage.loginAs("username").withPassword("password").login();
 		Assert.assertFalse(DashboardPage.isLoaded(), "Dashboard reached when it should have not.");
 	}

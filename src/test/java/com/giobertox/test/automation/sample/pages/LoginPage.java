@@ -6,10 +6,10 @@ import org.openqa.selenium.WebElement;
 import com.giobertox.test.automation.sample.utils.Driver;
 import com.giobertox.test.automation.sample.utils.LoginCommand;
 
-public class LoginPage {
+public class LoginPage extends BasicPage{
 	private static final String LOGIN_ERROR_ID = "login_error";
 
-	private static final String MEGANEXUS_LOGIN_URL = Driver.getBaseAddress() + "wp-login.php";
+	private static final String MEGANEXUS_LOGIN_URL = getBaseAddress() + "wp-login.php";
 
 	public static void goTo() {
 		Driver.getInstance().navigate().to(MEGANEXUS_LOGIN_URL);
