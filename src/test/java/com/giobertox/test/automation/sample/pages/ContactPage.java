@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import com.giobertox.test.automation.sample.utils.Driver;
 
-public class ContactPage extends BasicPage{
+public class ContactPage extends BasicPage {
 
 	private static final String MEGANEXUS_CONTACT_URL = getBaseAddress() + "contact/";
 
