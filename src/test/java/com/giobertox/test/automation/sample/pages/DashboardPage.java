@@ -9,10 +9,12 @@ import com.giobertox.test.automation.sample.utils.Driver;
 
 public class DashboardPage {
 
+	private static final By PAGE_TITLES = By.tagName("h2");
+
 	public static boolean isLoaded() {
-		List<WebElement> h2List = Driver.getInstance().findElements(By.tagName("h2"));
-		if (h2List.size() > 0) {
-			return h2List.get(0).getText().equals("Dashboard");
+		List<WebElement> pageTitles = Driver.getInstance().findElements(PAGE_TITLES);
+		if (pageTitles.size() > 0) {
+			return pageTitles.get(0).getText().equals("Dashboard");
 		}
 		return false;
 	}

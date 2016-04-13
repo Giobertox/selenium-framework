@@ -10,20 +10,21 @@ import org.openqa.selenium.WebElement;
 import com.giobertox.test.automation.sample.utils.Driver;
 import com.giobertox.test.automation.sample.utils.Utils;
 
-public class FileUploadPage {
+public class HomeTabPage {
 
 	private static final String TEST_DATA_SUBFOLDER = "\\TestData\\";
 	public static String IMAGE_FILENAME = "Prospects.png";
 	static String UPLOAD_FILE_FIELD_ID="m1384_formElement_139415";
 
-	final static Logger logger = Logger.getLogger(FileUploadPage.class);
-	private static final String UPLOAD_FORM_URL = "www.whatEvereItis.com/uploadform";
+	final static Logger logger = Logger.getLogger(HomeTabPage.class);
+	private static final String UPLOAD_FORM_URL = "www.whereverItis.com/uploadform";
 
 	public static void goTo() {
 		Driver.getInstance().navigate().to(UPLOAD_FORM_URL);
 	}
 
 	public static void fillUploadFileField() throws IOException  {
+
 		File imageFile = new File( System.getProperty("user.dir") + TEST_DATA_SUBFOLDER + IMAGE_FILENAME);
 		try {
 			Driver.getInstance().findElement(By.name(UPLOAD_FILE_FIELD_ID )).sendKeys(imageFile.getCanonicalPath());

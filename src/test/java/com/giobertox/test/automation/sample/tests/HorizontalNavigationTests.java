@@ -10,6 +10,7 @@ public class HorizontalNavigationTests extends BasicTest {
 
 	@Test
 	public void testAllMenuItemsWork() {
+
 		TopMenu.goToSolutions();
 		Assert.assertEquals(HeaderPage.getTitle().getText(), "Solutions",
 				"The header title does not match the selected menu item");

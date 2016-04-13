@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import com.giobertox.test.automation.sample.pages.TopMenu;
 
-public class TestTopMenuItemsLinks {
+public class TopMenuItemsLinksTests extends BasicTest {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;

@@ -4,9 +4,8 @@ public class Utils {
 
 
 
-	public static void captureScreenShot() {
-		// TODO Auto-generated method stub
-
+	public static void wait(final int milliseconds) throws InterruptedException {
+		Thread.sleep(milliseconds);
 	}
 
 }

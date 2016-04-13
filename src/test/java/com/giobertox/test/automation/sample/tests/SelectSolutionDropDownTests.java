@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.giobertox.test.automation.sample.pages.SolutionsPage;
-import com.giobertox.test.automation.sample.utils.Driver;
+import com.giobertox.test.automation.sample.utils.Utils;
 
 public class SelectSolutionDropDownTests extends BasicTest {
 
@@ -30,7 +30,7 @@ public class SelectSolutionDropDownTests extends BasicTest {
 				SolutionsPage.EDUCATION, SolutionsPage.EMPLOYMENT, SolutionsPage.JUSTICE, SolutionsPage.COMMUNITY));
 		for (String solution : solutionList) {
 			SolutionsPage.selectSolution(solution);
-			Driver.wait(1000);
+			Utils.wait(1000);
 			Assert.assertEquals(SolutionsPage.getSelectedSolution(), solution,
 					"Element displayed is not the expected one");
 		}
