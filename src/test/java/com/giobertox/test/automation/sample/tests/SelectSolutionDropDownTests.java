@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import com.giobertox.test.automation.sample.pages.SolutionsPage;
 import com.giobertox.test.automation.sample.utils.Driver;
 
-public class SelectSolutionDropDownTests extends BasicTests {
+public class SelectSolutionDropDownTests extends BasicTest {
 
 	@Test
 	public void allSolutionsAreListed() {

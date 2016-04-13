@@ -5,7 +5,7 @@ import com.giobertox.test.automation.sample.utils.Driver;
 public class HomePage extends BasicPage{
 	private static final String MEGANEXUS_HOME_PAGE_URL = getBaseAddress();
 
-	public static void open() {
+	public static void goTo() {
 		Driver.getInstance().navigate().to(MEGANEXUS_HOME_PAGE_URL);
 	}
 

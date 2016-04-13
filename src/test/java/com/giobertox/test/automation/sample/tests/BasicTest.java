@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 
 import com.giobertox.test.automation.sample.utils.Driver;
 
-public class BasicTests {
+public class BasicTest {
 
 	@BeforeClass(alwaysRun = true)
 	public void setUp() {
