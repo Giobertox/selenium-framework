@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.giobertox.test.automation.sample.utils.Driver;
-import com.giobertox.test.automation.sample.utils.Utils;
 
 public class HomeTabPage {
 
@@ -32,7 +31,7 @@ public class HomeTabPage {
 			// Printing logs for my report
 			logger.error("Error with canonical pathname string of this abstract pathname.");
 			// Taking screenshot for defect reporting
-			Utils.captureScreenShot();//TODO to implement or Selenium might have this utiloity already maybe using some lib
+//			Utils.captureScreenShot();//TODO to implement or Selenium might have this utiloity already maybe using some lib
 			// After doing my work, now i want to stop my test case
 			throw(e);
 		}
