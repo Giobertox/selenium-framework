@@ -6,10 +6,9 @@ import org.openqa.selenium.WebElement;
 import com.giobertox.test.automation.sample.utils.Driver;
 
 public class ContactPage extends BasicPage {
+
 	private static final By PAGE_TITLE = By.className("col-xs-12");
-	//URls
-	private static final String MEGANEXUS_CONTACT_URL =  Driver.getRootAddress() + "/contact";
-	//Page elements
+	// Page elements
 	private static final By ERROR_MESSAGE = By.className("wpcf7-not-valid-tip");
 	private static final By SEND_BUTTON = By.className("wpcf7-form-control");
 	private static final By MESSAGE_FIELD = By.name("contact-message");
@@ -18,15 +17,16 @@ public class ContactPage extends BasicPage {
 	private static final By CONTACT_EMAIL_FIELD = By.name("contact-email");
 	private static final By CONTACT_ORTGANISATION_FIELD = By.name("contact-organisation");
 	private static final By NAME_FIELD = By.name("contact-name");
-    // Parameters
+	// Parameters
 
-	public static void goTo() {
-		Driver.getInstance().navigate().to( MEGANEXUS_CONTACT_URL);
-	}
+	// public static void goTo() {
+	// TopMenu.ContactUs.select();
+	// }
 
-	public static  boolean isLoaded() {
+	public static boolean isLoaded() {
+		logger.info("Checking the Contact Page is loaded");
 		WebElement pageTitle = Driver.getInstance().findElement(PAGE_TITLE);
-		if ( pageTitle != null){
+		if (pageTitle != null) {
 			return pageTitle.getText().equals("Contact");
 		}
 		return false;

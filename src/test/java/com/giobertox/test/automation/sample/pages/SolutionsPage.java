@@ -37,7 +37,7 @@ public class SolutionsPage extends BasicPage{
 		return "";
 	}
 
-	public static List<WebElement> getSDropdownSolutionsMenuItems() {
+	public static List<WebElement> getDropdownSolutionOptions() {
 		Select select = new Select(Driver.getInstance().findElement(By.id("sector-change-select")));
 		List<WebElement> dropdownOptions = select.getOptions();
 		return dropdownOptions;

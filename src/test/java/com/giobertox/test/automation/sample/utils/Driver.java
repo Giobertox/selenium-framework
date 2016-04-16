@@ -16,7 +16,7 @@ public final class Driver {
 
 	private static final String SELENIUM_SERVER_URL = "http://127.0.0.1:5555/wd/hub";
 
-	private  static final WebDriver INSTANCE;
+	private static final WebDriver INSTANCE;
 
 	private Driver() {
 	}
@@ -25,20 +25,28 @@ public final class Driver {
 		return INSTANCE;
 	}
 
+	public enum DriverType {
+		LOCAL, SERVER;
+	}
+
 	static {
 		try {
+			// if(driverType.e)
 			DesiredCapabilities desiredCapabilities = setupDebugLogPreferences();
-			//			 If launched with Local Eclipse Selenium , the one in the project uncomment the following...
+			// If launched with Local Eclipse Selenium , the one in the project
+			// uncomment the following...
 			INSTANCE = new FirefoxDriver(desiredCapabilities);
-			// ...instead if launched with remote Selenium Server otherwise, uncomment the following line
-			//			instance = new RemoteWebDriver(new URL(SELENIUM_SERVER_URL), DesiredCapabilities.firefox());
+			// ...instead if launched with remote Selenium Server otherwise,
+			// uncomment the following line
+			// {
+			// INSTANCE = new RemoteWebDriver(new URL(SELENIUM_SERVER_URL),
+			// DesiredCapabilities.firefox();}
 			FirefoxProfile profile = new FirefoxProfile();
 			profile.setPreference("network.proxy.type", 0);
-			profile.setPreference("security.ssl3.dhe_rsa_aes_128_sha",false);
-			profile.setPreference("security.ssl3.dhe_rsa_aes_256_sha",false);
+			profile.setPreference("security.ssl3.dhe_rsa_aes_128_sha", false);
+			profile.setPreference("security.ssl3.dhe_rsa_aes_256_sha", false);
 			INSTANCE.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			throw new RuntimeException("Oh, an error occurred when instantiating the WebDriver!", e);
 		}
 	}
@@ -60,7 +68,5 @@ public final class Driver {
 	public static String getRootAddress() {
 		return ROOT_ADDRESS;
 	}
-
-
 
 }

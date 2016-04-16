@@ -9,13 +9,15 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.giobertox.test.automation.sample.pages.SolutionsPage;
+import com.giobertox.test.automation.sample.pages.TopMenu;
 import com.giobertox.test.automation.sample.utils.Utils;
 
-public class SelectSolutionDropDownTests extends BasicTest {
+public class SolutionsPageDropDownTests extends BasicTest {
 
 	@Test
 	public void allSolutionsAreListed() {
-		List<WebElement> dropdownOptions = SolutionsPage.getSDropdownSolutionsMenuItems();
+		TopMenu.Solutions.select();
+		List<WebElement> dropdownOptions = SolutionsPage.getDropdownSolutionOptions();
 		Assert.assertEquals(dropdownOptions.get(0).getText(), SolutionsPage.ALL);
 		Assert.assertEquals(dropdownOptions.get(1).getText(), SolutionsPage.HEALTHCARE);
 		Assert.assertEquals(dropdownOptions.get(2).getText(), SolutionsPage.EDUCATION);
@@ -26,6 +28,7 @@ public class SelectSolutionDropDownTests extends BasicTest {
 
 	@Test
 	public void solutionsSelectionsWork() throws InterruptedException {
+		TopMenu.Solutions.select();
 		ArrayList<String> solutionList = new ArrayList<String>(Arrays.asList(SolutionsPage.HEALTHCARE,
 				SolutionsPage.EDUCATION, SolutionsPage.EMPLOYMENT, SolutionsPage.JUSTICE, SolutionsPage.COMMUNITY));
 		for (String solution : solutionList) {
