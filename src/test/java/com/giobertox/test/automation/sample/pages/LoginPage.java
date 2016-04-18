@@ -3,13 +3,13 @@ package com.giobertox.test.automation.sample.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.giobertox.test.automation.sample.utils.Driver;
-import com.giobertox.test.automation.sample.utils.LoginCommand;
+import com.giobertox.test.automation.sample.selenium.Driver;
+import com.giobertox.test.automation.sample.selenium.LoginCommand;
 
-public class LoginPage extends BasicPage{
+public class LoginPage implements BasicPage {
 	private static final String LOGIN_ERROR_ID = "login_error";
 
-	private static final String MEGANEXUS_LOGIN_URL = Driver.getRootAddress() + "wp-login.php";
+	private static final String MEGANEXUS_LOGIN_URL = Driver.getRootUrlAddress() + "wp-login.php";
 
 	public static void goTo() {
 		Driver.getInstance().navigate().to(MEGANEXUS_LOGIN_URL);

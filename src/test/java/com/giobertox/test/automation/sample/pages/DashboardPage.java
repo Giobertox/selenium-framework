@@ -5,9 +5,9 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.giobertox.test.automation.sample.utils.Driver;
+import com.giobertox.test.automation.sample.selenium.Driver;
 
-public class DashboardPage {
+public class DashboardPage implements BasicPage {
 
 	private static final By PAGE_TITLES = By.tagName("h2");
 

@@ -6,11 +6,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.giobertox.test.automation.sample.utils.Driver;
+import com.giobertox.test.automation.sample.selenium.Driver;
 
-public class SolutionsPage extends BasicPage{
+public class SolutionsPage implements BasicPage {
 
-	private static final String MEGANEXUS_SOLUTIONS_URL = Driver.getRootAddress() + "/solutions-sectors/";
+	private static final String MEGANEXUS_SOLUTIONS_URL = Driver.getRootUrlAddress() + "/solutions-sectors/";
 
 	public static final String COMMUNITY = "Community";
 	public static final String JUSTICE = "Justice";
@@ -19,7 +19,7 @@ public class SolutionsPage extends BasicPage{
 	public static final String ALL = "All";
 	public static final String HEALTHCARE = "Healthcare";
 
-	public static void goTo() {
+	public void load() {
 		Driver.getInstance().navigate().to(MEGANEXUS_SOLUTIONS_URL);
 	}
 

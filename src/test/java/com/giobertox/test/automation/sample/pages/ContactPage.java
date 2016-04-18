@@ -3,9 +3,9 @@ package com.giobertox.test.automation.sample.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.giobertox.test.automation.sample.utils.Driver;
+import com.giobertox.test.automation.sample.selenium.Driver;
 
-public class ContactPage extends BasicPage {
+public class ContactPage implements BasicPage {
 
 	private static final By PAGE_TITLE = By.className("col-xs-12");
 	// Page elements
@@ -31,6 +31,12 @@ public class ContactPage extends BasicPage {
 		}
 		return false;
 	}
+
+	public void  load() {
+		// TODO Auto-generated method stub
+		return ;
+	}
+
 
 	public static void fillNameField() {
 		Driver.getInstance().findElement(NAME_FIELD).sendKeys("Name");
@@ -72,5 +78,6 @@ public class ContactPage extends BasicPage {
 		fillAreaOfInterest();
 		fillMessage();
 	}
+
 
 }

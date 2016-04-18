@@ -1,11 +1,11 @@
 package com.giobertox.test.automation.sample.pages;
 
-import com.giobertox.test.automation.sample.utils.Driver;
+import com.giobertox.test.automation.sample.selenium.Driver;
 
-public class HomePage extends BasicPage{
+public class HomePage implements BasicPage {
 
-	public static void goTo() {
-		Driver.getInstance().navigate().to( Driver.getRootAddress());
+	public static void load() {
+		Driver.getInstance().navigate().to( Driver.getRootUrlAddress());
 	}
 
 }

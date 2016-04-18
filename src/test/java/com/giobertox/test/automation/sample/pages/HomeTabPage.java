@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.giobertox.test.automation.sample.utils.Driver;
+import com.giobertox.test.automation.sample.selenium.Driver;
 
 public class HomeTabPage {
 

@@ -1,4 +1,4 @@
-package com.giobertox.test.automation.sample.utils;
+package com.giobertox.test.automation.sample.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

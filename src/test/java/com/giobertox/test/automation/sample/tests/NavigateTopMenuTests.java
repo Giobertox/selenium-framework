@@ -3,7 +3,7 @@ package com.giobertox.test.automation.sample.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.giobertox.test.automation.sample.components.TopMenu;
+import com.giobertox.test.automation.sample.navigation.TopMenu;
 import com.giobertox.test.automation.sample.pages.HeaderPage;
 
 public class NavigateTopMenuTests extends BasicTest {

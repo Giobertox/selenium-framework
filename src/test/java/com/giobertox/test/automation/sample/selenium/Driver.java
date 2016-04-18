@@ -1,4 +1,4 @@
-package com.giobertox.test.automation.sample.utils;
+package com.giobertox.test.automation.sample.selenium;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -12,7 +12,7 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public final class Driver {
-	private static final String ROOT_ADDRESS = "http://www.meganexus.com";
+	private static final String ROOT_URL_ADDRESS = "http://www.meganexus.com";
 
 	private static final String SELENIUM_SERVER_URL = "http://127.0.0.1:5555/wd/hub";
 
@@ -65,8 +65,13 @@ public final class Driver {
 		return desiredCapabilities;
 	}
 
-	public static String getRootAddress() {
-		return ROOT_ADDRESS;
+	public static String getRootUrlAddress() {
+		return ROOT_URL_ADDRESS;
 	}
+
+	public static void wait(final int milliseconds) throws InterruptedException {
+		Thread.sleep(milliseconds);
+	}
+
 
 }

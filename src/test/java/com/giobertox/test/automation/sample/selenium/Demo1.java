@@ -1,4 +1,4 @@
-package com.giobertox.test.automation.sample.utils;
+package com.giobertox.test.automation.sample.selenium;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;

@@ -5,13 +5,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import com.giobertox.test.automation.sample.pages.HomePage;
-import com.giobertox.test.automation.sample.utils.Driver;
+import com.giobertox.test.automation.sample.selenium.Driver;
 
-public class BasicTest {
+public abstract class BasicTest {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.giobertox.test.automation.sample.tests.TestInterface#setUp()
 	 */
 	@BeforeClass(alwaysRun = true)
@@ -21,7 +21,7 @@ public class BasicTest {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.giobertox.test.automation.sample.tests.TestInterface#tearDown()
 	 */
 	@AfterClass(alwaysRun = true)
@@ -32,13 +32,15 @@ public class BasicTest {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see
 	 * com.giobertox.test.automation.sample.tests.TestInterface#beforeMethod()
 	 */
 	@BeforeMethod(alwaysRun = true)
 	public void beforeMethod() {
-		HomePage.goTo();
+		HomePage.load();
 	}
+
+
 
 }

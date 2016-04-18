@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import com.giobertox.test.automation.sample.pages.TopMenu;
-import com.giobertox.test.automation.sample.utils.Driver;
+import com.giobertox.test.automation.sample.selenium.Driver;
 
 public class TopMenuItemsLinksTests extends BasicTest {
 	private WebDriver driver = Driver.getInstance();
