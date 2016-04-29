@@ -2,9 +2,9 @@ package com.giobertox.test.sample.best_practice;
 
 /**
  * Hello world!
- *
+ *ciao
  */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
