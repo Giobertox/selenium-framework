@@ -12,7 +12,7 @@ import com.giobertox.test.automation.sample.pages.SolutionsPage;
 import com.giobertox.test.automation.sample.pages.TopMenu;
 import com.giobertox.test.automation.sample.selenium.Driver;
 
-public class SolutionsPageDropDownTest extends BasicTest {
+public class SolutionsPageDropDownTest extends BasicTestAbstract {
 
 	@Test
 	public void allSolutionsAreListed() {

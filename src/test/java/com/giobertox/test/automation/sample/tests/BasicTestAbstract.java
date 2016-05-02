@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import com.giobertox.test.automation.sample.pages.HomePage;
 import com.giobertox.test.automation.sample.selenium.Driver;
 
-public abstract class BasicTest {
+public abstract class BasicTestAbstract {
 
 	/*
 	 * (non-Javadoc)

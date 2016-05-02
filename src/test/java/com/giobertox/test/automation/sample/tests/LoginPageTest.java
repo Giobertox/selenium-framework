@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.giobertox.test.automation.sample.pages.DashboardPage;
 import com.giobertox.test.automation.sample.pages.LoginPage;
 
-public class LoginPageTest extends BasicTest{
+public class LoginPageTest extends BasicTestAbstract{
 
 
 

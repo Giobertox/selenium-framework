@@ -1,6 +1,6 @@
 package com.giobertox.test.automation.sample.tests;
 
-public class UploadFileTest extends BasicTest {
+public class UploadFileTest extends BasicTestAbstract {
 
 	// @Test
 	// public void testSettingFileToBeUploaded() throws IOException {
