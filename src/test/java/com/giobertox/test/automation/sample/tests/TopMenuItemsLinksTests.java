@@ -26,7 +26,7 @@ public class TopMenuItemsLinksTests extends BasicTest {
 		// click | link=NEO |
 		isElementPresent(By.linkText("NEO"));
 		// click | link=Services |
-		// isElementPresent(By.linkText("Services"));
+		isElementPresent(By.linkText("Services"));
 		// click | link=News & Events |
 		isElementPresent(By.linkText("News & Events"));
 		// click | link=About us |
