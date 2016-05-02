@@ -1,15 +1,16 @@
 package com.giobertox.test.automation.sample.selenium;
 
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public final class Driver {
 	private static final String ROOT_URL_ADDRESS = "http://www.meganexus.com";
@@ -32,15 +33,16 @@ public final class Driver {
 	static {
 		try {
 			// if(driverType.e)
-			DesiredCapabilities desiredCapabilities = setupDebugLogPreferences();
+			// DesiredCapabilities desiredCapabilities =
+			// setupDebugLogPreferences();
 			// If launched with Local Eclipse Selenium , the one in the project
-			// uncomment the following...
-			INSTANCE = new FirefoxDriver(desiredCapabilities);
+			// use the following line ...
+			// INSTANCE = new FirefoxDriver(desiredCapabilities);
 			// ...instead if launched with remote Selenium Server otherwise,
-			// uncomment the following line
-			// {
-			// INSTANCE = new RemoteWebDriver(new URL(SELENIUM_SERVER_URL),
-			// DesiredCapabilities.firefox();}
+			// uncomment the following 3 lines
+			{
+				INSTANCE = new RemoteWebDriver(new URL(SELENIUM_SERVER_URL), DesiredCapabilities.firefox());
+			}
 			FirefoxProfile profile = new FirefoxProfile();
 			profile.setPreference("network.proxy.type", 0);
 			profile.setPreference("security.ssl3.dhe_rsa_aes_128_sha", false);
@@ -72,6 +74,5 @@ public final class Driver {
 	public static void wait(final int milliseconds) throws InterruptedException {
 		Thread.sleep(milliseconds);
 	}
-
 
 }
