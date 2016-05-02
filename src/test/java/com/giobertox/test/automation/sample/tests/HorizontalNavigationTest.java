@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.giobertox.test.automation.sample.navigation.TopMenu;
 import com.giobertox.test.automation.sample.pages.HeaderPage;
 
-public class HorizontalNavigationTests extends BasicTest {
+public class HorizontalNavigationTest extends BasicTest {
 
 	@Test
 	public void testAllMenuItemsWork() {

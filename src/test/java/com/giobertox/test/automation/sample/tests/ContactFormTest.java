@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.giobertox.test.automation.sample.pages.ContactPage;
 import com.giobertox.test.automation.sample.pages.TopMenu;
 
-public class ContactFormTests extends BasicTest {
+public class ContactFormTest extends BasicTest {
 
 	// @Autowired
 	// TopMenu topMenu;
