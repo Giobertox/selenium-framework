@@ -9,7 +9,7 @@ import com.giobertox.test.automation.sample.selenium.LoginCommand;
 public class LoginPage implements BasicPage {
 	private static final String LOGIN_ERROR_ID = "login_error";
 
-	private static final String MEGANEXUS_LOGIN_URL = Driver.getRootUrlAddress() + "wp-login.php";
+	private static final String MEGANEXUS_LOGIN_URL = Driver.getRootUrlAddress() + "/wp-login.php/";
 
 	public static void goTo() {
 		Driver.getInstance().navigate().to(MEGANEXUS_LOGIN_URL);
