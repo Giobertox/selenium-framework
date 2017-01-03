@@ -7,10 +7,11 @@ import com.giobertox.test.automation.sample.selenium.Driver;
 
 public class HeaderPage {
 
-	public static WebElement getTitle() {
-		WebElement headerTitle = Driver.getInstance().findElement(By.xpath("//*[@id=\"main\"]/header/div/div/div/h1"));
+  public static WebElement getTitle() {
+    WebElement headerTitle =
+        Driver.getInstance().findElement(By.xpath("//*[@id=\"main\"]/header/div/div/div/h1"));
 
-		return headerTitle;
-	}
+    return headerTitle;
+  }
 
 }

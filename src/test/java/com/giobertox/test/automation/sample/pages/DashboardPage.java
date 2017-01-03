@@ -9,14 +9,14 @@ import com.giobertox.test.automation.sample.selenium.Driver;
 
 public class DashboardPage implements BasicPage {
 
-	private static final By PAGE_TITLES = By.tagName("h2");
+  private static final By PAGE_TITLES = By.tagName("h2");
 
-	public static boolean isLoaded() {
-		List<WebElement> pageTitles = Driver.getInstance().findElements(PAGE_TITLES);
-		if (pageTitles.size() > 0) {
-			return pageTitles.get(0).getText().equals("Dashboard");
-		}
-		return false;
-	}
+  public static boolean isLoaded() {
+    List<WebElement> pageTitles = Driver.getInstance().findElements(PAGE_TITLES);
+    if (pageTitles.size() > 0) {
+      return pageTitles.get(0).getText().equals("Dashboard");
+    }
+    return false;
+  }
 
 }

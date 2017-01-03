@@ -8,9 +8,6 @@ import com.giobertox.test.automation.sample.pages.TopMenu;
 
 public class ContactFormTest extends BasicTestAbstract {
 
-  // @Autowired
-  // TopMenu topMenu;
-
   @Test
   public void testContactPageLoads() {
     TopMenu.ContactUs.select();

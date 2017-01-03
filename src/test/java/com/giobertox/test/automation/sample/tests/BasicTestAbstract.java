@@ -9,36 +9,35 @@ import com.giobertox.test.automation.sample.selenium.Driver;
 
 public abstract class BasicTestAbstract {
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see com.giobertox.test.automation.sample.tests.TestInterface#setUp()
-	 */
-	@BeforeClass(alwaysRun = true)
-	public void setUp() {
-		Driver.getInstance();
-	}
+  /*
+   * (non-Javadoc)
+   *
+   * @see com.giobertox.test.automation.sample.tests.TestInterface#setUp()
+   */
+  @BeforeClass(alwaysRun = true)
+  public void setUp() {
+    Driver.getInstance();
+  }
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see com.giobertox.test.automation.sample.tests.TestInterface#tearDown()
-	 */
-	@AfterClass(alwaysRun = true)
-	public void tearDown() {
-		// Driver.getInstance().quit();
-		// Browser.close();
-	}
+  /*
+   * (non-Javadoc)
+   *
+   * @see com.giobertox.test.automation.sample.tests.TestInterface#tearDown()
+   */
+  @AfterClass(alwaysRun = true)
+  public void tearDown() {
+    // Driver.getInstance().quit();
+    // Browser.close();
+  }
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see
-	 * com.giobertox.test.automation.sample.tests.TestInterface#beforeMethod()
-	 */
-	@BeforeMethod(alwaysRun = true)
-	public void beforeMethod() {
-		HomePage.load();
-	}
+  /*
+   * (non-Javadoc)
+   *
+   * @see com.giobertox.test.automation.sample.tests.TestInterface#beforeMethod()
+   */
+  @BeforeMethod(alwaysRun = true)
+  public void beforeMethod() {
+    HomePage.load();
+  }
 
 }
