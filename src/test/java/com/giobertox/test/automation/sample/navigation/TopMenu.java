@@ -7,7 +7,7 @@ import com.giobertox.test.automation.sample.selenium.Driver;
 
 public class TopMenu {
 
-	private static final String CONTACT__MENU_ITEM = "menu-item-88";
+  private static final String CONTACT__MENU_ITEM = "menu-item-88";
 	private static final String ABOUT_US__MENU_ITEM = "menu-item-166";
 	private static final String NEWS_MENU_ITEM = "menu-item-89";
 	private static final String SERVICES_MENU_ITEM = "menu-item-622";

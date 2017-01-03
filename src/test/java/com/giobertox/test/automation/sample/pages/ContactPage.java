@@ -46,9 +46,9 @@ public class ContactPage implements BasicPage {
 		Driver.getInstance().findElement(CONTACT_ORTGANISATION_FIELD).sendKeys("Organisation");
 	}
 
-	public static void fillEmail() {
-		Driver.getInstance().findElement(CONTACT_EMAIL_FIELD).sendKeys("Email@Address.com");
-	}
+  public static void fillEmail() {
+    Driver.getInstance().findElement(CONTACT_EMAIL_FIELD).sendKeys("Email@Address.com");
+  }
 
 	public static void fillTelephoneNumber() {
 		Driver.getInstance().findElement(PHONE_FIELD).sendKeys("07776994531");
@@ -73,7 +73,7 @@ public class ContactPage implements BasicPage {
 	public static void fillContactForm() {
 		fillNameField();
 		fillOrganisationField();
-		fillEmail();
+    fillEmail();
 		fillTelephoneNumber();
 		fillAreaOfInterest();
 		fillMessage();
