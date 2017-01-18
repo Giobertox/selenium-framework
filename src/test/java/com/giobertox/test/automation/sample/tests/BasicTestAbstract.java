@@ -26,7 +26,7 @@ public abstract class BasicTestAbstract {
    */
   @AfterClass(alwaysRun = true)
   public void tearDown() {
-    // Driver.getInstance().quit();
+    Driver.getInstance().quit();
     // Browser.close();
   }
 
@@ -39,5 +39,4 @@ public abstract class BasicTestAbstract {
   public void beforeMethod() {
     HomePage.load();
   }
-
 }

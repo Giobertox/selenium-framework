@@ -1,6 +1,5 @@
 package com.giobertox.test.automation.sample.selenium;
 
-import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
@@ -11,12 +10,11 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 public final class Driver {
   private static final String ROOT_URL_ADDRESS = "http://www.meganexus.com";
 
-  private static final String SELENIUM_SERVER_URL = "http://127.0.0.1:5555/wd/hub";
+  // private static final String SELENIUM_SERVER_URL = "http://127.0.0.1:5555/wd/hub";
 
   private static final WebDriver INSTANCE;
 
@@ -26,19 +24,17 @@ public final class Driver {
     return INSTANCE;
   }
 
-  public enum DriverType {
-    LOCAL, SERVER;
-  }
-
   static {
     try {
       // if(driverType.e)
       DesiredCapabilities desiredCapabilities = setupDebugLogPreferences();
       // If launched with Local Eclipse Selenium , the one in the project
       // use the following line ...
+      System.setProperty("webdriver.gecko.driver", "G:\\Selenium\\Firefox driver\\geckodriver.exe");
       INSTANCE = new FirefoxDriver(desiredCapabilities);
       // ...instead if launched with remote Selenium Server otherwise,
       // uncomment the following 3 lines
+      // INSTANCE = new FirefoxDriver(desiredCapabilities);
       // {
       // INSTANCE = new RemoteWebDriver(new URL(SELENIUM_SERVER_URL),
       // DesiredCapabilities.firefox());
