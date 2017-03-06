@@ -14,6 +14,7 @@ public class TopMenu {
   private static final String NEO__MENU_ITEM = "menu-item-164";
   private static final String CLIENTS__MENU_ITEM = "menu-item-91";
   private static final String SOLUTION_MENU_ITEM = "menu-item-105";
+  
 
   public static void goToSolutions() {
     WebElement solutionMenuItem = Driver.getInstance().findElement(By.id(SOLUTION_MENU_ITEM));
