@@ -2,6 +2,7 @@ package com.giobertox.test.automation.sample.pages;
 
 import org.openqa.selenium.By;
 
+import com.giobertox.test.automation.sample.navigation.SectorPageNavi;
 import com.giobertox.test.automation.sample.selenium.Driver;
 
 public class NeoSecureVideoCloud implements BasicPage {
@@ -24,6 +25,7 @@ public class NeoSecureVideoCloud implements BasicPage {
 	
     public static void goTo() {
         Driver.getInstance().navigate().to(MEGANEXUS_NEOSECURE_URL);
+      
       }
     
     public static String getSECURE_PIC(){
