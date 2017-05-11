@@ -7,7 +7,8 @@ import com.giobertox.test.automation.sample.navigation.SectorPageNavi;
 import com.giobertox.test.automation.sample.pages.HeaderPage;
 
 import com.giobertox.test.automation.sample.pages.NeoSecureVideoCloud;
-import com.giobertox.test.automation.sample.pages.TopMenu;;
+import com.giobertox.test.automation.sample.pages.TopMenu;
+
 
 public class NeoSecureVideoCloudTest extends BasicTestAbstract {
 	
@@ -36,14 +37,19 @@ public class NeoSecureVideoCloudTest extends BasicTestAbstract {
 			   "The paragraph does not match the one required");
    }
    
+   
+   /* this is where the click error comes in */
+   
    @Test
-	public void testHealthcareNavigationWorks() {
-		TopMenu.Neo.select();
-		SectorPageNavi.goToHealthcare();
-		Assert.assertEquals(HeaderPage.getTitle().getText(), "Healthcare",
+	public void testHealthcareNavigationWorks(){
+		NeoSecureVideoCloud.goTo();
+		NeoSecureVideoCloud.commitClick();
+		Assert.assertEquals(HeaderPage.getTitle().getText(), "NEO COMMIT\nClinical Outcome Monitoring Management Information Technology",
 				"The header title does not match the selected item");
 	}
    
+   
+  
 
    
 }

@@ -1,8 +1,8 @@
 package com.giobertox.test.automation.sample.pages;
 
 import org.openqa.selenium.By;
-
-import com.giobertox.test.automation.sample.navigation.SectorPageNavi;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import com.giobertox.test.automation.sample.selenium.Driver;
 
 public class NeoSecureVideoCloud implements BasicPage {
@@ -21,8 +21,11 @@ public class NeoSecureVideoCloud implements BasicPage {
 /* lets find some xml to test */
     
     private static final By SECURE_PIC = By.xpath("//*[@id=\"main\"]/div/div/div/div[2]/p[1]/a/img");
-    		
-	
+    
+    
+//    private static final By NEO_COMMIT = By.className("color-nav-neo-commit");
+    
+    
     public static void goTo() {
         Driver.getInstance().navigate().to(MEGANEXUS_NEOSECURE_URL);
       
@@ -37,15 +40,18 @@ public class NeoSecureVideoCloud implements BasicPage {
 	public static String getSentance() {
 		return SENTANCE;
 	}
-    
-    
-   
-
-
-	
-
 	
 	
+	
+	
+	/* click error in here */
+	public static void commitClick(){
+		
+		WebElement commitItem = Driver.getInstance().findElement(By.className("color-nav-neo-commit"));
+		commitItem.click();
+	  
+		
+	   }
 	
 	
 
