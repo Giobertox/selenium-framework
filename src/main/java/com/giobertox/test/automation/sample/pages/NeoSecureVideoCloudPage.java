@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import com.giobertox.test.automation.sample.selenium.Driver;
 
-public class NeoSecureVideoCloud implements BasicPage {
+public class NeoSecureVideoCloudPage implements BasicPage {
 	
 	
 /* navigate to the desired page */
