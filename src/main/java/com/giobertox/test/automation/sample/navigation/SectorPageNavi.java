@@ -38,17 +38,5 @@ public class SectorPageNavi {
 	}
 	
 	
-	/* add code to test the links for the NEO solutions */
-	
-//
-//	public static boolean goToTransform(){
-//		WebElement TransformItem = Driver.getInstance().findElement(By.className("color-nav-neo-transforming-rehabilitation"));
-//		TransformItem.click();
-//		
-//		
-//		return true; 
-//		
-//		
-//		}
 	
 }

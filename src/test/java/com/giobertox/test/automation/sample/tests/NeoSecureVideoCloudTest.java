@@ -45,16 +45,6 @@ public class NeoSecureVideoCloudTest extends BasicTestAbstract {
 	}
    
 
-     /* test to push through two pages, new method was needed for this */
-   
-	
-//   @Test
-//    public void testHealthcareNavigationWorks() {
-//	NeoSecureVideoCloud.goTo();
-////	SectorPageNavi.goToTransform();
-//	Assert.assertEquals(SectorPageNavi.goToTransform(), true, "This is not correct");
-//}
-//   
    
 }
 
