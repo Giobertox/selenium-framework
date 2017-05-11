@@ -1,8 +1,7 @@
 package com.giobertox.test.automation.sample.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
+
 import com.giobertox.test.automation.sample.selenium.Driver;
 
 public class NeoSecureVideoCloudPage implements BasicPage {
@@ -31,16 +30,6 @@ public class NeoSecureVideoCloudPage implements BasicPage {
 	public static String getSentance() {
 		return SENTENCE;
 	}
-	
-	
-	
-	public static void commitClick(){
-		
-		WebElement commitItem = Driver.getInstance().findElement(NEO_COMMIT);
-		commitItem.click();
-	  
-		
-	   }
 	
 	
 

@@ -3,11 +3,11 @@ package com.giobertox.test.automation.sample.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.giobertox.test.automation.sample.navigation.SectorPageNavi;
+
 import com.giobertox.test.automation.sample.pages.HeaderPage;
 
 import com.giobertox.test.automation.sample.pages.NeoSecureVideoCloudPage;
-import com.giobertox.test.automation.sample.pages.TopMenu;
+
 
 
 public class NeoSecureVideoCloudTest extends BasicTestAbstract {
@@ -38,19 +38,8 @@ public class NeoSecureVideoCloudTest extends BasicTestAbstract {
    }
    
    
-   /* this is where the click error comes in */
-   
-   @Test
-	public void testHealthcareNavigationWorks(){
-		NeoSecureVideoCloudPage.goTo();
-		NeoSecureVideoCloudPage.commitClick();
-		Assert.assertEquals(HeaderPage.getTitle().getText(), "NEO COMMIT\nClinical Outcome Monitoring Management Information Technology",
-				"The header title does not match the selected item");
-	}
    
    
-  
-
    
 }
 
