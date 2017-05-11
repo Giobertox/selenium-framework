@@ -37,4 +37,6 @@ public class SectorPageNavi {
 		communityItem.click();
 	}
 	
+	
+	
 }
