@@ -8,22 +8,13 @@ import com.giobertox.test.automation.sample.selenium.Driver;
 public class NeoSecureVideoCloudPage implements BasicPage {
 	
 	
-/* navigate to the desired page */
+
 	
 	private static final String MEGANEXUS_NEOSECURE_URL = Driver.getRootUrlAddress() + "/solutions/neo-secure-video-cloud/";
-	
-/* lets create a paragraph to test */
-	
-	
-    private static final String SENTANCE = "NEO Secure Video Cloud can be added to other NEO applications";
- 
-	
-/* lets find some xml to test */
-    
+	/* features */
+    private static final String SENTENCE = "NEO Secure Video Cloud can be added to other NEO applications";
     private static final By SECURE_PIC = By.xpath("//*[@id=\"main\"]/div/div/div/div[2]/p[1]/a/img");
-    
-    
-//    private static final By NEO_COMMIT = By.className("color-nav-neo-commit");
+    private static final By NEO_COMMIT = By.className("color-nav-neo-commit");
     
     
     public static void goTo() {
@@ -38,16 +29,14 @@ public class NeoSecureVideoCloudPage implements BasicPage {
 	}
 
 	public static String getSentance() {
-		return SENTANCE;
+		return SENTENCE;
 	}
 	
 	
 	
-	
-	/* click error in here */
 	public static void commitClick(){
 		
-		WebElement commitItem = Driver.getInstance().findElement(By.className("color-nav-neo-commit"));
+		WebElement commitItem = Driver.getInstance().findElement(NEO_COMMIT);
 		commitItem.click();
 	  
 		
