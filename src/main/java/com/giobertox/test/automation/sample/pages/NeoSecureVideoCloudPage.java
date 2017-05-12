@@ -13,7 +13,7 @@ public class NeoSecureVideoCloudPage implements BasicPage {
 	/* features */
     private static final String SENTENCE = "NEO Secure Video Cloud can be added to other NEO applications";
     private static final By SECURE_PIC = By.xpath("//*[@id=\"main\"]/div/div/div/div[2]/p[1]/a/img");
-  private static final By NEO_COMMIT = By.id("menu-item-372");
+
 
 
     public static void goTo() {
