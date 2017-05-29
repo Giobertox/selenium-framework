@@ -24,42 +24,6 @@ public final class Driver {
   }
 
 
-  // static {
-  // try {
-  // // if(driverType.e)
-  // DesiredCapabilities desiredCapabilities = setupDebugLogPreferences();
-  // // If launched with Local Eclipse Selenium , the one in the project
-  // // use the following line ...
-  //
-  // System.setProperty("webdriver.chrome.driver",
-  // "C:\\Development\\workspace\\selenium-framework\\resources\\chromedriver.exe");
-  //
-  // /*
-  // * System.setProperty("phantomjs.binary.path",
-  // * ".\\resources\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
-  // */
-  // INSTANCE = new FirefoxDriver(desiredCapabilities);
-  // // INSTANCE = new PhantomJSDriver(desiredCapabilities);
-  // /*
-  // * System.setProperty("webdriver.chrome.driver", ".\\resources\\IEDriverServer.exe"); INSTANCE
-  // * = new InternetExplorerDriver(desiredCapabilities);
-  // */
-  // // ...instead if launched with remote Selenium Server otherwise,
-  // // uncomment the following 3 lines
-  // // {
-  // // INSTANCE = new RemoteWebDriver(new URL(SELENIUM_SERVER_URL),
-  // // DesiredCapabilities.firefox());
-  // // }
-  // FirefoxProfile profile = new FirefoxProfile();
-  // profile.setPreference("network.proxy.type", 0);
-  // profile.setPreference("security.ssl3.dhe_rsa_aes_128_sha", false);
-  // profile.setPreference("security.ssl3.dhe_rsa_aes_256_sha", false);
-  // INSTANCE.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-  // } catch (Exception e) {
-  // throw new RuntimeException("Oh, an error occurred when instantiating the WebDriver!", e);
-  // }
-  // }
-
   static {
     try {
       // if(driverType.e)
